@@ -39,13 +39,19 @@ transform: rotateY(180deg);
     animation-name: animate;
     /* animation-timing-function: 2s; */
     animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    /* animation-direction: reverse; */
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 
 }
 
 @keyframes animate{
-    0%{background-color: black;}
-    25%{background-color: blueviolet;}
-    50%{background-color: blue;}
-    75%{background-color: chocolate;}
-    100%{background-color: chartreuse;}
+    0%{background-color: black; left: 0px; top: 0px;}
+    25%{background-color: blueviolet; left: 300px; top: 0px;}
+    50%{background-color: blue; left: 300px; top: 300px;}
+    75%{background-color: chocolate; left: 0px; top: 300px;}
+    100%{background-color: chartreuse; left: 0px; top: 0px;}
 }
