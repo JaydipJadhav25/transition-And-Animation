@@ -16,7 +16,36 @@
 .box:hover{
     border-radius: 50%;
     background-color: aquamarine;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg);
+     */
+/* transform: rotateZ(90deg); */
+
+transform: rotateY(180deg);
 
 
+}
+
+
+/* animation */
+
+.box2{
+
+    width: 200px;
+    height: 200px;
+    background-color: rgb(133, 74, 8);
+   position: relative;
+   /* margin-top: 20px; */
+    margin: 20px auto;
+    animation-name: animate;
+    /* animation-timing-function: 2s; */
+    animation-duration: 4s;
+
+}
+
+@keyframes animate{
+    0%{background-color: black;}
+    25%{background-color: blueviolet;}
+    50%{background-color: blue;}
+    75%{background-color: chocolate;}
+    100%{background-color: chartreuse;}
 }
